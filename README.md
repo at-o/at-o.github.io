@@ -1,6 +1,7 @@
 # Personal Portfolio Website
 
-This is a personal portfolio website for [chiefportable](https://chiefportable.gitbub.io)
+This is a personal portfolio website for
+[chiefportable](https://chiefportable.gitbub.io)
 
 ## Tools
 
