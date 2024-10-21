@@ -1,5 +1,6 @@
 ---
 layout: default
+title: "Home Page"
 ---
 
 <main class="mx-auto max-w-3xl px-4 text-zinc-900 font-mono">
@@ -35,7 +36,7 @@ layout: default
     <section class="mb-20 text-gray-700">
         <h2
             id="project"
-            class="text-3xl text-blue-500 font-bold mb-4 leading-snug"
+            class="text-3xl text-blue-900 font-bold mb-4 leading-snug"
         >
             Projects
         </h2>
@@ -59,7 +60,7 @@ layout: default
     </section>
 
     <section class="my-5">
-        <h2 id="post" class="text-3xl text-blue-500 font-bold mb-4 flex">
+        <h2 id="post" class="text-3xl text-blue-900 font-bold mb-4 flex">
             Post
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -79,9 +80,58 @@ layout: default
             various topics including Web Programming, System Programming, Data
             Structures and Algorithm and software engineering.
         </p>
-        <hr class="text-blue-500 w-100 my-5" />
+        <hr class="text-blue-900 w-100 my-5" />
 
-        <h2 class="text-xl text-blue-500 font-bold mb-4 flex">Recent Post</h2>
+        <h2 class="text-2xl text-black font-bold mb-4 flex">Recent Post</h2>
+        <ul>
+            {% for post in site.posts %}
+            <li class="my-5">
+                <a
+                    class="text-blue-900 text-xl hover:underline hover:decoration-dashed"
+                    href="{{post.url}}"
+                >
+                    {{post.title}}
+                </a>
+                <div class="flex space-x-2">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-calendar3-fill"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm0 1v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3z"
+                        />
+                    </svg>
+                    <p>{{post.date}}</p>
+                </div>
+                <div>
+                    <p>{{post.excerpt}}</p>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <div
+            class="text-center justify-center my-10 flex space-x-2 hover:text-blue-900"
+        >
+            <a href="/post">All posts </a>
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-right mt-1"
+                viewBox="0 0 16 16"
+            >
+                <path
+                    fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                />
+            </svg>
+        </div>
     </section>
 
     <hr class="text-blue-500 w-100" />
@@ -89,13 +139,21 @@ layout: default
     <div class="py-10 flex justify-between">
         <p>Copyright &copy; 2024 | All rights reserved.</p>
         <div class="flex space-x-2">
-            <img
-                src="assets/github.svg"
-                alt="github logo"
-                width="30"
-                height="23"
-            />
-            <img src="assets/x.svg" alt="github logo" width="30" height="23" />
+            <a href="https://github.com/special-blue" target="_blank"
+                ><img
+                    src="assets/github.svg"
+                    alt="github logo"
+                    width="30"
+                    height="23"
+                />
+            </a>
+            <a href="https://twitter.com/chiefportable"
+                ><img
+                    src="assets/x.svg"
+                    alt="github logo"
+                    width="30"
+                    height="23"
+            /></a>
         </div>
     </div>
 </main>
