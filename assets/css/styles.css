@@ -6,3 +6,72 @@ p a {
     color: rgb(3, 5, 122);
     text-decoration: underline;
 }
+
+h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}
+
+pre {
+    font-size-adjust: from-font;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 0.375rem;
+    padding: 1rem;
+    line-height: 1.375;
+    overflow: auto;
+}
+
+pre code {
+    font-family: "SF Mono", SFMono-Regular, ui-monospace, "DejaVu Sans Mono",
+        Menlo, Consolas, monospace;
+    font-size: 0.875em;
+}
+
+pre code .c,
+pre code .c1,
+pre code .c,
+pre code .c1 {
+    color: rgb(124, 124, 124);
+}
+
+pre code .s,
+pre code .s1,
+pre code .s2,
+pre code .s,
+code.jsx .s1,
+code.jsx .s2 {
+    color: rgb(75, 159, 58);
+}
+
+pre code .kr,
+pre code .k,
+pre code .kd,
+pre code .kc,
+pre code .kr,
+pre code .k,
+pre code .kd,
+pre code .kc {
+    color: rgb(214, 55, 97);
+}
+
+pre code .kt,
+pre code .kt {
+    color: rgb(53, 129, 211);
+}
+
+pre code .mi,
+pre code .mh,
+pre code .mf,
+pre code .mi,
+pre code .mh,
+pre code .mf {
+    color: rgb(217, 153, 58);
+}
+
+pre code .nf {
+    color: rgb(58, 61, 217);
+}

@@ -19,3 +19,11 @@ My obsession lead to learning the basics of all popular programming languages ar
 Dear reader, I am not a proffesional writer and It takes me a long period to write these articles forgive me there are any typo.
 
 Thank you for reading.
+
+```typescript
+function sayHello(name: string) {
+    return `hello ${name}`;
+}
+const a_name: string = "Chiefportable";
+console.log(sayHello(a_name));
+```
