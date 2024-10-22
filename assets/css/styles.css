@@ -1,0 +1,8 @@
+p {
+    padding-top: 20px;
+}
+
+p a {
+    color: rgb(3, 5, 122);
+    text-decoration: underline;
+}
