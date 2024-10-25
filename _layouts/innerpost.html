@@ -5,7 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>{{site.title}} | {{page.title}}</title>
         {% for post in site.posts %}
-        <meta name="description" content="{{post.excerpt}}" />
+        <meta name="description" content="{{post.title}}" />
+        <meta
+            property="twitter:url"
+            content="https://chiefportable.github.io"
+        />
+        <meta property="twitter:title" content="{{post.title}}" />
+        <meta property="twitter:description" content="{{post.title}}" />
+
         {% endfor %}
         <meta name="keywords" content="{{site.keywords}}" />
         <link
