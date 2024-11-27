@@ -4,7 +4,7 @@ title: "Home Page"
 ---
 
 <main class="mx-auto max-w-3xl px-4 text-zinc-900 font-mono">
-    <nav class="items-center p-6 md:flex md:justify-between md:mb-12">
+    <nav class="items-center p-6 text-yellow-500 md:flex md:justify-between md:mb-12">
         <div class="">
             <a href="/" class="flex">
                 <img
@@ -24,9 +24,7 @@ title: "Home Page"
         </div>
     </nav>
 
-    <section></section>
-
-    <section class="mb-12">
+    <section class="mb-12 text-yellow-500">
         <h1 class="text-2xl my-5">Welcome!</h1>
         <p class="">
             Building stuff, Learning Rust and looking forward to contributing to
@@ -39,13 +37,13 @@ title: "Home Page"
 
     <section class="mb-10">
         <div class="my-5">
-            <h2 id="project" class="px-3 py-3 inline-block bg-black text-white">
+            <h2 id="project" class="px-3 py-3 inline-block bg-yellow-500 text-purple-950">
                 Projects
             </h2>
-            <hr />
+            <hr class="h-1 mx-auto bg-yellow-500 border-0" />
         </div>
 
-        <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <div class="grid grid-cols-1 gap-3 text-yellow-500 sm:grid-cols-2">
             <ul>
                 <li>
                     <a
@@ -59,12 +57,12 @@ title: "Home Page"
         </div>
     </section>
 
-    <section class="my-5">
+    <section class="my-5 text-yellow-500">
         <div class="my-5">
-            <h2 id="post" class="px-3 py-3 inline-block bg-black text-white">
+            <h2 id="post" class="px-3 py-3 inline-block bg-yellow-500 text-purple-950">
                 Blog Post
             </h2>
-            <hr />
+            <hr class="h-1 mx-auto bg-yellow-500 border-0" />
         </div>
 
         <p>
@@ -74,10 +72,10 @@ title: "Home Page"
         </p>
 
         <div class="my-5">
-            <h2 class="px-3 py-3 inline-block bg-black text-white">
+            <h2 class="px-3 py-3 inline-block bg-yellow-500 text-purple-950">
                 Recent Post
             </h2>
-            <hr />
+            <hr class="h-1 mx-auto bg-yellow-500 border-0" />
         </div>
         <ul>
             {% for post in site.posts %}
@@ -88,24 +86,6 @@ title: "Home Page"
                 >
                     {{post.title}}
                 </a>
-                <div class="flex space-x-2">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-calendar3-fill"
-                        viewBox="0 0 16 16"
-                    >
-                        <path
-                            d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zm0 1v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3z"
-                        />
-                    </svg>
-                    <p>{{ post.date | date: ' %b %d, %Y' }}</p>
-                </div>
-                <div>
-                    <p>{{post.excerpt}}</p>
-                </div>
             </li>
             {% endfor %}
         </ul>
@@ -130,9 +110,9 @@ title: "Home Page"
         </div>
     </section>
 
-    <hr class="text-blue-500 w-100" />
+    <hr class="h-1 mx-auto bg-yellow-500 border-0" />
 
-    <div class="py-10 flex justify-between">
+    <div class="py-10 flex justify-between text-yellow-500">
         <p>
             Copyright &copy; {{site.time | date: '%Y'}} | All rights reserved.
         </p>
